@@ -1,0 +1,10 @@
+a = input("The Karaca's Encryption Algorithm \n Encrypt: ").lower()
+transform = {
+    'a': 0,
+    'e': 1,
+    'i': 2,
+    'o': 2,
+    'u': 3,
+}
+output = ''.join([ str(transform[i]) if i in 'aeiou' else i for i in list(a[::-1])])
+print(output)
